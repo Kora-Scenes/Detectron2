@@ -1,7 +1,11 @@
 def Maskgen_model(outputs, ind):
     out = outputs["instances"][outputs["instances"].pred_classes == ind].pred_masks.to('cpu')
     out = out.numpy()
-    return(out)
+
+    pred_mask = np.full(out[0].shape,False, dtype =bool)
+    for j in out:
+        pred_mask = np.logical_or(pred_mask,j)
+    return(pred_mask)
 
 def Maskgen(image, color_code):
     mask = (image == color_code).all(-1)
