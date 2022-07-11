@@ -15,8 +15,8 @@ def Maskgen(image, color_code):
 def Metrics(gt,pred):
     intersection = np.logical_and(gt,pred)
     union = np.logical_or(gt,pred)
-    IOU = np.count_nonzero(intersection) / np.count_nonzero(union)
-    Dice_coeff = 2 * np.count_nonzero(intersection) / (np.count_nonzero(gt) + np.count_nonzero(pred))
+    IOU = np.sum(intersection) / np.sum(union)
+    Dice_coeff = 2 * np.sum(intersection) / (np.sum(gt) + np.sum(pred))
     return((IOU,Dice_coeff))
 
 
