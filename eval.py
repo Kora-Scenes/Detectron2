@@ -7,7 +7,7 @@ def Maskgen_model(outputs, ind):
         pred_mask = np.logical_or(pred_mask,j)
     return(pred_mask)
 
-def Maskgen(image, color_code):
+def Maskgen(image, color_code): #color_code = KITTI segmentation groud truth color code
     mask = (image == color_code).all(-1)
     return(mask)
 
