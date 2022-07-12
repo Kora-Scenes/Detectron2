@@ -1,4 +1,4 @@
-def Maskgen_model(outputs, ind):
+def Maskgen_model(outputs, ind): # outputs = Detectron2 outputs ; ind = class index
     out = outputs["instances"][outputs["instances"].pred_classes == ind].pred_masks.to('cpu')
     out = out.numpy()
 
