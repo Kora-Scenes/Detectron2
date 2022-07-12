@@ -5,13 +5,12 @@ path_semantic = path + '/semantic_rgb'
 
 import glob
 import warnings as wr
-
+import numpy as np
+import os, json, cv2, random
 
 import detectron2
 from detectron2.utils.logger import setup_logger
 setup_logger()
-
-
 
 from detectron2 import model_zoo
 from detectron2.engine import DefaultPredictor
