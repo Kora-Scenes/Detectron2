@@ -36,6 +36,7 @@ predictor = DefaultPredictor(cfg)
 outputs = predictor(im)
 
 # print(outputs["instances"].pred_classes)
+# print(outputs["instances"].pred_boxes)
 print(outputs['instances'].pred_masks)
 
 pred = [0,2,3,5,6,7,9,10,11]
