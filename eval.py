@@ -16,7 +16,7 @@ def Metrics(gt,pred):
     intersection = np.logical_and(gt,pred)
     union = np.logical_or(gt,pred)
     IOU = np.sum(intersection) / np.sum(union)
-    Dice_coeff = 2 * np.sum(intersection) / (np.sum(gt) + np.sumd(pred))
+    Dice_coeff = 2 * np.sum(intersection) / (np.sum(gt) + np.sum(pred))
     return((IOU,Dice_coeff))
 
 
