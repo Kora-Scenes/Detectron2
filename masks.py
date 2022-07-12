@@ -2,8 +2,10 @@ path = '/home/yln1kor/Downloads/kitti_official_semantic/training'
 path_images = path + '/image_2'
 path_instance = path + '/instance'
 path_semantic = path + '/semantic_rgb'
+
 import glob
 import warnings as wr
+
 import detectron2
 from detectron2.utils.logger import setup_logger
 setup_logger()
