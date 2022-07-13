@@ -1,10 +1,11 @@
 def Maskgen_model(outputs, ind): # outputs = Detectron2 outputs ; ind = class index
     out = outputs["instances"][outputs["instances"].pred_classes == ind].pred_masks.to('cpu')
     out = out.numpy()
-
-    pred_mask = np.full(out[0].shape,False, dtype =bool)
+    pred_mask = np.full(out[0].shape,False, dtype =bool) #Creating numpy array to add all masks of a class
+    
     for j in out:
         pred_mask = np.logical_or(pred_mask,j)
+        
     return(pred_mask)
 
 def Maskgen(image, color_code): #color_code = KITTI segmentation groud truth color code
