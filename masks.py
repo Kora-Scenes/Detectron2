@@ -6,7 +6,6 @@ path_semantic = path + '/semantic_rgb'
 import glob
 import numpy as np
 import os, json, cv2, random
-
 import detectron2
 from detectron2.utils.logger import setup_logger
 setup_logger()
