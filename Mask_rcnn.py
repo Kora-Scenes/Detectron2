@@ -3,8 +3,8 @@
 # so we install from source instead. This takes a few minutes.
 # !python -m pip install 'git+https://github.com/facebookresearch/detectron2.git'
 # Install pre-built detectron2 that matches pytorch version, if released:
-# # See https://detectron2.readthedocs.io/tutorials/install.html for instructions
-# #!pip install detectron2 -f https://dl.fbaipublicfiles.com/detectron2/wheels/{CUDA_VERSION}/{TORCH_VERSION}/index.html
+# See https://detectron2.readthedocs.io/tutorials/install.html for instructions
+# !pip install detectron2 -f https://dl.fbaipublicfiles.com/detectron2/wheels/{CUDA_VERSION}/{TORCH_VERSION}/index.html
 # python3 -m pip install detectron2==0.6 -f   https://dl.fbaipublicfiles.com/detectron2/wheels/cu102/torch1.10/index.html
 # # exit(0)  # After installation, you may need to "restart runtime" in Colab. This line can also restart runtime
 
