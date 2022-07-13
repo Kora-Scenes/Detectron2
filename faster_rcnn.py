@@ -40,9 +40,10 @@ print(outputs["instances"].pred_boxes)
 
 pred = [0,2,3,5,6,7,9,10,11]
 v = Visualizer(im[:, :, ::-1], MetadataCatalog.get(cfg.DATASETS.TRAIN[0]), scale=1.2)
+
 for i in pred:
     out = v.draw_instance_predictions(outputs["instances"][outputs['instances'].pred_classes == i].to("cpu"))
-# out = v.draw_instance_predictions(outputs["instances"][outputs['instances'].pred_classes == 0].to("cpu"))
+    
 out_path = '/home/yln1kor/nikhil-test/Detectron2/cycle_faster.jpg'
 cv2.imwrite(out_path,out.get_image())
 cv2.imshow("output",out.get_image())
