@@ -1,3 +1,3 @@
 # Detectron2
 
-    Mask RCNN and evaluation
+    Mask RCNN, Faster RCNN and evaluation
