@@ -35,6 +35,7 @@ cfg.MODEL.WEIGHTS = model_zoo.get_checkpoint_url("COCO-InstanceSegmentation/mask
 predictor = DefaultPredictor(cfg)
 outputs = predictor(im)
 
+# print(outputs["instances"])
 # print(outputs["instances"].pred_classes)
 # print(outputs["instances"].pred_boxes)
 print(outputs['instances'].pred_masks)
