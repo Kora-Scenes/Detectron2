@@ -117,8 +117,8 @@ for i in range(len(gt_masks)):
 print('IOU',sum_IOU/len(gt_masks))
 print('DSC',sum_DSC/len(gt_masks))
 
-# with open('mrcnn_masks.npy', 'wb') as f:
-#     np.save(f,im_predmasks)
+with open('mrcnn_masks.npy', 'wb') as f:
+    np.save(f,im_predmasks)
 
 # import numpy as np
 # w = open('mrcnn_masks.txt','r')
