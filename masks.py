@@ -1,3 +1,6 @@
+# Generate masks for Mask RCNN, eval with ground truth
+# 10 images KITTI semantic
+
 path = '/home/yln1kor/Downloads/kitti_official_semantic/training'
 path_images = path + '/image_2'
 path_instance = path + '/instance'
