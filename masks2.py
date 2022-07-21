@@ -1,5 +1,5 @@
 # Generate masks and metrics for classes ['car','person'] 
-# 10 images KITTI
+# 10 images KITTI semnatic
 
 path = '/home/yln1kor/Downloads/kitti_official_semantic/training'
 path_images = path + '/image_2'
