@@ -1,6 +1,6 @@
 # Detectron2
 
-    Mask RCNN, Faster RCNN and evaluation
+    Mask RCNN, Pointrend, Faster RCNN and evaluation
     
 # Dependencies:
     pip3 install -r requirements.txt
