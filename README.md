@@ -12,7 +12,7 @@
     
     pip install -e detectron2_repo  (If have to compile from source) (optional)
     
-    version used - 
+    Version used locally - 
     python3 -m pip install detectron2==0.6 -f   https://dl.fbaipublicfiles.com/detectron2/wheels/cu102/torch1.10/index.html
     
     
