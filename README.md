@@ -28,5 +28,5 @@ Steps:
     python3 masks2.py                To run and get masks for predictions and ground truth for pedestrians and vehicles (grey scale images)
     python3 pointrend.py             To Run pointrend image segmentation model through detectron2
     python3 ptrend_masks.py          To generate pointrend masks and download masks numpy in .npy files
-    
+    python3 ensemble.py              To get the ensemble of mask rcnn and pointrend masks stored as .npy files
     
