@@ -16,3 +16,17 @@
     python3 -m pip install detectron2==0.6 -f   https://dl.fbaipublicfiles.com/detectron2/wheels/cu102/torch1.10/index.html
     
     
+Steps:
+    Download Kitti_official_semantic from the list of datasets in the shared folder on the system 10.165.81.147
+    change path names in code wherever necessary
+    
+    run dependencies based on your system
+    
+    python3 Mask_rcnn.py             To Run mask rcnn model through detectron2
+    python3 faster_rcnn.py           To Run faster rcnn model through detectron2
+    python3 masks.py                 To run and get masks for predictions and ground truth  (preds and gt)
+    python3 masks2.py                To run and get masks for predictions and ground truth for pedestrians and vehicles (grey scale images)
+    python3 pointrend.py             To Run pointrend image segmentation model through detectron2
+    python3 ptrend_masks.py          To generate pointrend masks and download masks numpy in .npy files
+    
+    
